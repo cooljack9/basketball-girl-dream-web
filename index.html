@@ -1,1 +1,45 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>篮球女孩梦工场</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="character.css"></head><body><div id="bar" aria-hidden="true"></div><div id="app"><div class="overlay"><div class="modal"><h2>加载中…</h2></div></div></div><div id="toasts"></div><div id="err-layer"></div><script src="engine.js"></script><script src="client.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>篮球女孩梦工场 · 开始游玩</title>
+<style>
+  :root { --bg:#0f1226; --card:#1a1f3d; --accent:#ff7a3d; --accent2:#ffd23d; --text:#f5f7ff; --muted:#aab0d6; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    background:radial-gradient(1200px 600px at 70% -10%, #2a2f5a 0%, var(--bg) 60%); color:var(--text); }
+  .wrap { width:min(680px,92vw); text-align:center; padding:40px 24px; }
+  .ball { font-size:64px; }
+  h1 { font-size:34px; margin:12px 0 6px; letter-spacing:1px; }
+  .tag { color:var(--muted); font-size:15px; margin-bottom:22px; }
+  .features { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:18px 0 28px; }
+  .pill { background:var(--card); border:1px solid #2c335f; border-radius:999px; padding:8px 14px; font-size:13px; color:var(--muted); }
+  .play { display:inline-block; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#1a1205;
+    font-weight:700; font-size:18px; padding:14px 34px; border-radius:14px; text-decoration:none;
+    box-shadow:0 10px 30px rgba(255,122,61,.35); transition:transform .15s ease; }
+  .play:hover { transform:translateY(-2px); }
+  .note { margin-top:22px; font-size:13px; color:var(--muted); }
+  .note code { background:#11152e; padding:2px 6px; border-radius:6px; color:var(--accent2); }
+  footer { margin-top:30px; font-size:12px; color:#6b72a3; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="ball">🏀</div>
+    <h1>篮球女孩梦工场</h1>
+    <div class="tag">从初中校队到职业联赛，打造属于你的篮球少女生涯。</div>
+    <div class="features">
+      <span class="pill">生涯模拟</span>
+      <span class="pill">多线剧情</span>
+      <span class="pill">属性养成</span>
+      <span class="pill">比赛演出</span>
+    </div>
+    <!-- TODO: 部署后端到 Render / Railway 后，把下面 href 换成你的 App URL -->
+    <a class="play" href="https://your-app-url.example.com/">▶ 开始游玩</a>
+    <div class="note">游戏运行在 <code>Render / Railway</code> 后端 · 源码见私有仓库</div>
+    <footer>© 篮球女孩梦工场</footer>
+  </div>
+</body>
+</html>
